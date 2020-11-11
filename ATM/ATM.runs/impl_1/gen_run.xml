@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1557401855">
+  <File Type="BITSTR-BMM" Name="Interface_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Interface_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Interface_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="Interface_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Interface.tcl"/>
+  <File Type="OPT-TIMING" Name="Interface_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Interface_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Interface_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Interface_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Interface_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Interface.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Interface_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Interface_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Interface_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Interface_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Interface_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Interface_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Interface_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Interface_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Interface_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Interface_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Interface_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Interface.bgn"/>
+  <File Type="PLACE-TIMING" Name="Interface_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Interface_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Interface.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Interface_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Interface_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Interface_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="Interface.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="Interface_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Interface_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Interface_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Interface_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Interface_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Interface_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Interface.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Interface_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Interface.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Interface_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Interface_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Interface.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Interface_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Interface_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Interface_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Interface_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Interface_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Interface_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Interface_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Interface_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Interface_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Interface_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Interface_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Interface_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Interface_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Interface_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Interface_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Interface_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Interface_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Interface_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Interface_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Interface.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Interface_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="Interface.rbt"/>
+  <File Type="BITSTR-NKY" Name="Interface.nky"/>
+  <File Type="BG-DRC" Name="Interface.drc"/>
+  <File Type="RDI-RDI" Name="Interface.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/BancnotesNeeded.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BancnotesVerifier.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BlocDisplay.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BlocEliberareNumerar.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BlocRetragereExacta.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BlocRetragereRapida.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BlocSchimbarePin.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/BlocVerificarePin.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CommandUnit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Comparator16bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/CounterModulo4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Debouncer.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/DigitReader.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Dmux21_2bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MagazieBancnote.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/MoneyMemory.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/PinMemory.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/SumToBeExtracted.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/atm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/bcd_adder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/bcd_adder_digit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/bcd_substractor.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/bcd_substractor_2digits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/bcd_substractor_digit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/comparator1000.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/countermodulo10.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/freqdivider.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/segment7.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/sumcomparator.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Interface.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Interface"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

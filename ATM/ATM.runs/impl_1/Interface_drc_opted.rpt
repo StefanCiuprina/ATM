@@ -1,0 +1,146 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu May  9 14:38:58 2019
+| Host         : stefan-hp running 64-bit major release  (build 9200)
+| Command      : report_drc -file Interface_drc_opted.rpt -pb Interface_drc_opted.pb -rpx Interface_drc_opted.rpx
+| Design       : Interface
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 17
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 16         |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_1/tmp[1]_i_2__0 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/VERIFPIN/C4_2/tmp_reg[0], ATM_1/VERIFPIN/C4_2/tmp_reg[1]
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_2/tmp[1]_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/VERIFPIN/DR_1/C4_1/tmp_reg[0], ATM_1/VERIFPIN/DR_1/C4_1/tmp_reg[1]
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_2/tmp[1]_i_2__2 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/RETREX/DR_2/C4_1/tmp_reg[0], ATM_1/RETREX/DR_2/C4_1/tmp_reg[1], ATM_1/SCHPIN/DR/C4_1/tmp_reg[0], ATM_1/SCHPIN/DR/C4_1/tmp_reg[1]
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[1]_i_2__3 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/RETRRAP/CP_3/tmp_reg[0], ATM_1/RETRRAP/CP_3/tmp_reg[1]
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/RETREX/DR_2/C10_1/tmp_reg[0], ATM_1/RETREX/DR_2/C10_1/tmp_reg[1], ATM_1/RETREX/DR_2/C10_1/tmp_reg[2], ATM_1/RETREX/DR_2/C10_1/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__0 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/RETREX/DR_2/C10_3/tmp_reg[0], ATM_1/RETREX/DR_2/C10_3/tmp_reg[1], ATM_1/RETREX/DR_2/C10_3/tmp_reg[2], ATM_1/RETREX/DR_2/C10_3/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__1 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/SCHPIN/DR/C10_1/tmp_reg[0], ATM_1/SCHPIN/DR/C10_1/tmp_reg[1], ATM_1/SCHPIN/DR/C10_1/tmp_reg[2], ATM_1/SCHPIN/DR/C10_1/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__10 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/RETREX/DR_2/C10_2/tmp_reg[0], ATM_1/RETREX/DR_2/C10_2/tmp_reg[1], ATM_1/RETREX/DR_2/C10_2/tmp_reg[2], ATM_1/RETREX/DR_2/C10_2/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#9 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__2 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/SCHPIN/DR/C10_3/tmp_reg[0], ATM_1/SCHPIN/DR/C10_3/tmp_reg[1], ATM_1/SCHPIN/DR/C10_3/tmp_reg[2], ATM_1/SCHPIN/DR/C10_3/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#10 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__3 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/VERIFPIN/DR_1/C10_1/tmp_reg[0], ATM_1/VERIFPIN/DR_1/C10_1/tmp_reg[1], ATM_1/VERIFPIN/DR_1/C10_1/tmp_reg[2], ATM_1/VERIFPIN/DR_1/C10_1/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#11 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__4 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/VERIFPIN/DR_1/C10_3/tmp_reg[0], ATM_1/VERIFPIN/DR_1/C10_3/tmp_reg[1], ATM_1/VERIFPIN/DR_1/C10_3/tmp_reg[2], ATM_1/VERIFPIN/DR_1/C10_3/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#12 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__5 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/VERIFPIN/DR_1/C10_4/tmp_reg[0], ATM_1/VERIFPIN/DR_1/C10_4/tmp_reg[1], ATM_1/VERIFPIN/DR_1/C10_4/tmp_reg[2], ATM_1/VERIFPIN/DR_1/C10_4/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#13 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__6 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/SCHPIN/DR/C10_4/tmp_reg[0], ATM_1/SCHPIN/DR/C10_4/tmp_reg[1], ATM_1/SCHPIN/DR/C10_4/tmp_reg[2], ATM_1/SCHPIN/DR/C10_4/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#14 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__7 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/RETREX/DR_2/C10_4/tmp_reg[0], ATM_1/RETREX/DR_2/C10_4/tmp_reg[1], ATM_1/RETREX/DR_2/C10_4/tmp_reg[2], ATM_1/RETREX/DR_2/C10_4/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#15 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__8 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/VERIFPIN/DR_1/C10_2/tmp_reg[0], ATM_1/VERIFPIN/DR_1/C10_2/tmp_reg[1], ATM_1/VERIFPIN/DR_1/C10_2/tmp_reg[2], ATM_1/VERIFPIN/DR_1/C10_2/tmp_reg[3]
+Related violations: <none>
+
+PLHOLDVIO-2#16 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBC_3/tmp[3]_i_2__9 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+ATM_1/SCHPIN/DR/C10_2/tmp_reg[0], ATM_1/SCHPIN/DR/C10_2/tmp_reg[1], ATM_1/SCHPIN/DR/C10_2/tmp_reg[2], ATM_1/SCHPIN/DR/C10_2/tmp_reg[3]
+Related violations: <none>
+
+

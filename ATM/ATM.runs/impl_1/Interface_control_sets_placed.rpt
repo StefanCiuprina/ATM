@@ -1,0 +1,108 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu May  9 14:39:03 2019
+| Host         : stefan-hp running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Interface_control_sets_placed.rpt
+| Design       : Interface
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    37 |
+| Unused register locations in slices containing registers |   135 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      3 |            3 |
+|      4 |           13 |
+|      5 |            1 |
+|      8 |            4 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              21 |           13 |
+| No           | No                    | Yes                    |              96 |           32 |
+| No           | Yes                   | No                     |              84 |           25 |
+| Yes          | No                    | No                     |              16 |            7 |
+| Yes          | No                    | Yes                    |              24 |           11 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+---------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|             Clock Signal            |                   Enable Signal                   |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-------------------------------------+---------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  DBC_1/CLK                          |                                                   | ATM_1/COMMAND_U/AR[0]                             |                1 |              2 |
+|  DBC_2/Q_reg[2]_0                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[5]_0    |                1 |              2 |
+|  DBC_2/Q_reg[2]_0                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[9]_0[0] |                1 |              2 |
+|  DBC_3/Q_reg[2]_0                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[4]_0[0] |                2 |              2 |
+|  DBC_2/FSM_onehot_next_state_reg[1] |                                                   | ATM_1/COMMAND_U/AR[0]                             |                1 |              2 |
+|  DBC_1/FREQ/CLK                     |                                                   |                                                   |                1 |              3 |
+|  DBC_2/FREQ/CLK                     |                                                   |                                                   |                1 |              3 |
+|  DBC_3/FREQ/CLK                     |                                                   |                                                   |                1 |              3 |
+|  DBC_1/clk1_signal_BUFG             |                                                   |                                                   |                2 |              4 |
+|  DBC_3/tmp_reg[1]_2                 |                                                   | ATM_1/COMMAND_U/AR[0]                             |                1 |              4 |
+|  DBC_3/tmp_reg[1]_4                 |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[5]_0    |                1 |              4 |
+|  DBC_3/Q_reg[2]_1                   |                                                   | ATM_1/COMMAND_U/AR[0]                             |                1 |              4 |
+|  DBC_3/tmp_reg[0]_1                 |                                                   | ATM_1/COMMAND_U/AR[0]                             |                1 |              4 |
+|  DBC_3/tmp_reg[1]_1                 |                                                   | ATM_1/COMMAND_U/AR[0]                             |                1 |              4 |
+|  DBC_3/tmp_reg[0]                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[5]_0    |                2 |              4 |
+|  DBC_3/tmp_reg[0]_0                 |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[9]_0[0] |                1 |              4 |
+|  DBC_3/Q_reg[2]_3                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[5]_0    |                1 |              4 |
+|  DBC_3/tmp_reg[1]                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[5]_0    |                1 |              4 |
+|  DBC_3/tmp_reg[1]_0                 |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[9]_0[0] |                1 |              4 |
+|  DBC_3/tmp_reg[1]_3                 |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[9]_0[0] |                1 |              4 |
+|  DBC_3/Q_reg[2]_2                   |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[9]_0[0] |                1 |              4 |
+|  clk_signal_BUFG                    |                                                   | ATM_1/SUMTOBE/AR[0]                               |                2 |              5 |
+|  clk_signal_BUFG                    | ATM_1/ELIBNUM/BNCVERIF/BANKNEEDED/write_select__0 |                                                   |                2 |              8 |
+|  clk_signal_BUFG                    | ATM_1/ELIBNUM/BNCVERIF/tmp[7]_i_1_n_0             | ATM_1/SUMTOBE/AR[0]                               |                3 |              8 |
+|  clk_signal_BUFG                    | ATM_1/ELIBNUM/BNCVERIF/write_select_reg_n_0       |                                                   |                2 |              8 |
+|  CLK_IBUF_BUFG                      |                                                   |                                                   |                8 |              8 |
+|  DBC_1/clk1_signal_BUFG             |                                                   | ATM_1/COMMAND_U/FSM_onehot_next_state_reg[5]_0    |                5 |             12 |
+|  DBC_1/clk1_signal_BUFG             |                                                   | RESET_IBUF                                        |                6 |             14 |
+|  EliberareNumerar_OBUF_BUFG         |                                                   |                                                   |                4 |             16 |
+|  clk_signal_BUFG                    | ATM_1/ELIBNUM/BNCVERIF/MAGAZIE/E[0]               | ATM_1/SUMTOBE/AR[0]                               |                8 |             16 |
+|  clk_signal_BUFG                    | ATM_1/COMMAND_U/E[0]                              |                                                   |                7 |             16 |
+|  ATM_1/COMMAND_U/Q[7]               |                                                   |                                                   |                4 |             16 |
+|  CLK_IBUF_BUFG                      |                                                   | DBC_1/FREQ/count[18]_i_1_n_0                      |                5 |             18 |
+|  CLK_IBUF_BUFG                      |                                                   | DBC_2/FREQ/count[18]_i_1__0_n_0                   |                5 |             18 |
+|  CLK_IBUF_BUFG                      |                                                   | DBC_3/FREQ/count[18]_i_1__1_n_0                   |                5 |             18 |
+|  CLK_IBUF_BUFG                      |                                                   | FREQDIV/count[18]_i_1__2_n_0                      |                5 |             18 |
+|  CLK_IBUF_BUFG                      |                                                   | clr_IBUF                                          |                5 |             19 |
++-------------------------------------+---------------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+
